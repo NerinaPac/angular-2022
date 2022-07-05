@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Este es el css general, solo se va a ejecutar para el componente.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blanco: #fff;
+    --negro: #000
+    --gris:#333;
+    --naranja:#f90;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
