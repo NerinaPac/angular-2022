@@ -6,7 +6,17 @@
 
         <p>{{ contenido }}</p>
 
-        {{ destacado }}
+        
+        <p class="card-destacado" *ngIf="destacado"> <!-- Si queres que muestre false, usamos ! -->
+            Oferta Inbatible!!
+        </p>
+
+      <!--   <ul>
+            <li *ngFor="let numero of numeros">
+                Este compartimento tiene el numero: {{ numero }}
+            </li>
+
+        </ul> -->
 
         <p class="card-info_precio">
             ${{ precio }} <br>

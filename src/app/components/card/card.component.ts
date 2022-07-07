@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -9,12 +9,14 @@ export class CardComponent implements OnInit {
 
   constructor() { }
 
-  imagen = "assets/viajes/newyork.jpg";
-  categoria = "Paquete";
-  titulo = "New York";
-  contenido = "lorem blah";
-  destacado = true;
-  precio = 5000;
+  @Input()imagen? = "assets/viajes/newyork.jpg";
+  @Input()categoria: string | undefined;
+  @Input()titulo: string | undefined;
+  @Input()contenido: string | undefined;
+  @Input()destacado = false;
+  @Input()precio: number | undefined;
+
+  numeros = [1, 2, 3, 4, 5, 6, 7];
 
   ngOnInit(): void {
   }
