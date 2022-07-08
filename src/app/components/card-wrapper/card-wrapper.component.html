@@ -1,15 +1,12 @@
-<div class="wrapper">
-    <app-card
-    [imagen] = imagen
-    [categoria] = categoria
-    [titulo] = titulo
-    [destacado] = destacado
-    [contenido] = contenido
-    [precio] = precio
-    
-    
-       
-
+<div class="wrapper" >
+   <app-card *ngFor="let viaje of viajes"
+    [imagen] = "viaje.image"
+    [categoria] = "viaje.categoria"
+    [titulo] = "viaje.titulo"
+    [destacado] = "viaje.destacado"
+    [contenido] = "viaje.contenido"
+    [precio] = "viaje.precio"
     ></app-card>
     
+   
 </div>

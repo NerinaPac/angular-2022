@@ -9,11 +9,11 @@ export class CardComponent implements OnInit {
 
   constructor() { }
 
-  @Input()imagen? = "assets/viajes/newyork.jpg";
+  @Input()imagen? = "assets/viajes/islandia.jpg";
   @Input()categoria: string | undefined;
   @Input()titulo: string | undefined;
   @Input()contenido: string | undefined;
-  @Input()destacado = false;
+  @Input()destacado? = false;
   @Input()precio: number | undefined;
 
   numeros = [1, 2, 3, 4, 5, 6, 7];
