@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { CardComponent } from './components/card/card.component';
 import { CardWrapperComponent } from './components/card-wrapper/card-wrapper.component';
+import { NosotrosComponent } from './pages/nosotros/nosotros.component';
+import { ContactosComponent } from './pages/contactos/contactos.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     CardComponent,
-    CardWrapperComponent
+    CardWrapperComponent,
+    NosotrosComponent,
+    ContactosComponent,
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
